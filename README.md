@@ -8,23 +8,14 @@ This repository contains Python classes generated for gRPC communication within 
 git submodule update --init --recursive
 ```
 
-### protoc (from source)
+### Install gRPC:
 ```
-sudo apt-get install -y git autoconf automake libtool curl make g++ unzip
-git clone https://github.com/google/protobuf.git
-cd protobuf/
-./autogen.sh
-./configure
-make
-make check
-sudo make install
-sudo ldconfig # refresh shared library cache.
-protoc -h
+python -m pip install grpcio
 ```
 
 (see https://github.com/protocolbuffers/protobuf/blob/master/src/README.md for more)
 
-## Compilation
+## Compilation:
 ```
 python -m grpc_tools.protoc --python_out=. --grpc_python_out=. cloudkeeper.proto -I.
 ```
