@@ -3,6 +3,11 @@
 This repository contains Python classes generated for gRPC communication within the [cloudkeeper](https://github.com/the-cloudkeeper-project/cloudkeeper) project.
 
 ## Depends
+### git submodules
+```
+git submodule update --init --recursive
+```
+
 ### protoc (from source)
 ```
 sudo apt-get install -y git autoconf automake libtool curl make g++ unzip
