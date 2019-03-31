@@ -17,5 +17,5 @@ python -m pip install grpcio
 
 ## Compilation:
 ```
-python -m grpc_tools.protoc --python_out=grpc --grpc_python_out=grpc -I=cloudkeeper-proto/ cloudkeeper.proto
+python -m grpc_tools.protoc --python_out=generated --grpc_python_out=generated -I=cloudkeeper-proto/ cloudkeeper.proto
 ```
