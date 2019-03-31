@@ -1,3 +1,3 @@
 [submodule "cloudkeeper-proto"]
-	path = cloudkeeper-proto
+	path = proto/cloudkeeper-proto
 	url = https://github.com/the-cloudkeeper-project/cloudkeeper-proto
