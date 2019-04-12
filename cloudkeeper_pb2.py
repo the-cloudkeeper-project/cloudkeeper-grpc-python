@@ -21,112 +21,12 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='cloudkeeper_grpc',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=_b('\n\x11\x63loudkeeper.proto\x12\x10\x63loudkeeper_grpc\x1a\x1bgoogle/protobuf/empty.proto\"\xdc\x02\n\tAppliance\x12\x12\n\nidentifier\x18\x01 \x01(\t\x12\r\n\x05title\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\r\n\x05mpuri\x18\x04 \x01(\t\x12\r\n\x05group\x18\x05 \x01(\t\x12\x0b\n\x03ram\x18\x06 \x01(\x03\x12\x0c\n\x04\x63ore\x18\x07 \x01(\x05\x12\x0f\n\x07version\x18\x08 \x01(\t\x12\x14\n\x0c\x61rchitecture\x18\t \x01(\t\x12\x18\n\x10operating_system\x18\n \x01(\t\x12\n\n\x02vo\x18\x0b \x01(\t\x12\x17\n\x0f\x65xpiration_date\x18\x0c \x01(\x03\x12\x1d\n\x15image_list_identifier\x18\r \x01(\t\x12\x12\n\nbase_mpuri\x18\x0e \x01(\t\x12\r\n\x05\x61ppid\x18\x0f \x01(\t\x12\x0e\n\x06\x64igest\x18\x10 \x01(\t\x12&\n\x05image\x18\x11 \x01(\x0b\x32\x17.cloudkeeper_grpc.Image\"\xaf\x04\n\x05Image\x12*\n\x04mode\x18\x01 \x01(\x0e\x32\x1c.cloudkeeper_grpc.Image.Mode\x12\x10\n\x08location\x18\x02 \x01(\t\x12H\n\x10\x63ontainer_format\x18\x03 \x01(\x0e\x32..cloudkeeper_grpc.Image.ContainerFormat.Format\x12\x0b\n\x03uri\x18\x04 \x01(\t\x12\x10\n\x08\x63hecksum\x18\x05 \x01(\t\x12\x0c\n\x04size\x18\x06 \x01(\x03\x12\x10\n\x08username\x18\x07 \x01(\t\x12\x10\n\x08password\x18\x08 \x01(\t\x12\x0e\n\x06\x64igest\x18\t \x01(\t\x12>\n\x0b\x64isk_format\x18\n \x01(\x0e\x32).cloudkeeper_grpc.Image.DiskFormat.Format\x1a\x7f\n\nDiskFormat\"q\n\x06\x46ormat\x12\x07\n\x03\x41KI\x10\x00\x12\x07\n\x03\x41MI\x10\x01\x12\x07\n\x03\x41RI\x10\x02\x12\x07\n\x03ISO\x10\x03\x12\t\n\x05PLOOP\x10\x04\x12\t\n\x05QCOW2\x10\x05\x12\x07\n\x03RAW\x10\x06\x12\x07\n\x03VDI\x10\x07\x12\x07\n\x03VHD\x10\x08\x12\x08\n\x04VHDX\x10\t\x12\x08\n\x04VMDK\x10\n\x1a]\n\x0f\x43ontainerFormat\"J\n\x06\x46ormat\x12\x07\n\x03\x41KI\x10\x00\x12\x07\n\x03\x41MI\x10\x01\x12\x07\n\x03\x41RI\x10\x02\x12\x08\n\x04\x42\x41RE\x10\x03\x12\t\n\x05\x44OCKE\x10\x04\x12\x07\n\x03OVA\x10\x05\x12\x07\n\x03OVF\x10\x06\"\x1d\n\x04Mode\x12\t\n\x05LOCAL\x10\x00\x12\n\n\x06REMOTE\x10\x01\"4\n\x13ImageListIdentifier\x12\x1d\n\x15image_list_identifier\x18\x01 \x01(\t2\x82\x06\n\x0c\x43ommunicator\x12=\n\tPreAction\x12\x16.google.protobuf.Empty\x1a\x16.google.protobuf.Empty\"\x00\x12>\n\nPostAction\x12\x16.google.protobuf.Empty\x1a\x16.google.protobuf.Empty\"\x00\x12\x45\n\x0c\x41\x64\x64\x41ppliance\x12\x1b.cloudkeeper_grpc.Appliance\x1a\x16.google.protobuf.Empty\"\x00\x12H\n\x0fUpdateAppliance\x12\x1b.cloudkeeper_grpc.Appliance\x1a\x16.google.protobuf.Empty\"\x00\x12P\n\x17UpdateApplianceMetadata\x12\x1b.cloudkeeper_grpc.Appliance\x1a\x16.google.protobuf.Empty\"\x00\x12H\n\x0fRemoveAppliance\x12\x1b.cloudkeeper_grpc.Appliance\x1a\x16.google.protobuf.Empty\"\x00\x12R\n\x0fRemoveImageList\x12%.cloudkeeper_grpc.ImageListIdentifier\x1a\x16.google.protobuf.Empty\"\x00\x12O\n\nImageLists\x12\x16.google.protobuf.Empty\x1a%.cloudkeeper_grpc.ImageListIdentifier\"\x00\x30\x01\x12T\n\nAppliances\x12%.cloudkeeper_grpc.ImageListIdentifier\x1a\x1b.cloudkeeper_grpc.Appliance\"\x00\x30\x01\x12K\n\x17RemoveExpiredAppliances\x12\x16.google.protobuf.Empty\x1a\x16.google.protobuf.Empty\"\x00P\x00\x62\x06proto3')
+  serialized_pb=_b('\n\x11\x63loudkeeper.proto\x12\x10\x63loudkeeper_grpc\x1a\x1bgoogle/protobuf/empty.proto\"\xdc\x02\n\tAppliance\x12\x12\n\nidentifier\x18\x01 \x01(\t\x12\r\n\x05title\x18\x02 \x01(\t\x12\x13\n\x0b\x64\x65scription\x18\x03 \x01(\t\x12\r\n\x05mpuri\x18\x04 \x01(\t\x12\r\n\x05group\x18\x05 \x01(\t\x12\x0b\n\x03ram\x18\x06 \x01(\x03\x12\x0c\n\x04\x63ore\x18\x07 \x01(\x05\x12\x0f\n\x07version\x18\x08 \x01(\t\x12\x14\n\x0c\x61rchitecture\x18\t \x01(\t\x12\x18\n\x10operating_system\x18\n \x01(\t\x12\n\n\x02vo\x18\x0b \x01(\t\x12\x17\n\x0f\x65xpiration_date\x18\x0c \x01(\x03\x12\x1d\n\x15image_list_identifier\x18\r \x01(\t\x12\x12\n\nbase_mpuri\x18\x0e \x01(\t\x12\r\n\x05\x61ppid\x18\x0f \x01(\t\x12\x0e\n\x06\x64igest\x18\x10 \x01(\t\x12&\n\x05image\x18\x11 \x01(\x0b\x32\x17.cloudkeeper_grpc.Image\"\xa6\x02\n\x05Image\x12*\n\x04mode\x18\x01 \x01(\x0e\x32\x1c.cloudkeeper_grpc.Image.Mode\x12\x10\n\x08location\x18\x02 \x01(\t\x12.\n\x06\x66ormat\x18\x03 \x01(\x0e\x32\x1e.cloudkeeper_grpc.Image.Format\x12\x0b\n\x03uri\x18\x04 \x01(\t\x12\x10\n\x08\x63hecksum\x18\x05 \x01(\t\x12\x0c\n\x04size\x18\x06 \x01(\x03\x12\x10\n\x08username\x18\x07 \x01(\t\x12\x10\n\x08password\x18\x08 \x01(\t\x12\x0e\n\x06\x64igest\x18\t \x01(\t\"\x1d\n\x04Mode\x12\t\n\x05LOCAL\x10\x00\x12\n\n\x06REMOTE\x10\x01\"/\n\x06\x46ormat\x12\x07\n\x03RAW\x10\x00\x12\x07\n\x03OVA\x10\x01\x12\t\n\x05QCOW2\x10\x02\x12\x08\n\x04VMDK\x10\x03\"4\n\x13ImageListIdentifier\x12\x1d\n\x15image_list_identifier\x18\x01 \x01(\t2\x82\x06\n\x0c\x43ommunicator\x12=\n\tPreAction\x12\x16.google.protobuf.Empty\x1a\x16.google.protobuf.Empty\"\x00\x12>\n\nPostAction\x12\x16.google.protobuf.Empty\x1a\x16.google.protobuf.Empty\"\x00\x12\x45\n\x0c\x41\x64\x64\x41ppliance\x12\x1b.cloudkeeper_grpc.Appliance\x1a\x16.google.protobuf.Empty\"\x00\x12H\n\x0fUpdateAppliance\x12\x1b.cloudkeeper_grpc.Appliance\x1a\x16.google.protobuf.Empty\"\x00\x12P\n\x17UpdateApplianceMetadata\x12\x1b.cloudkeeper_grpc.Appliance\x1a\x16.google.protobuf.Empty\"\x00\x12H\n\x0fRemoveAppliance\x12\x1b.cloudkeeper_grpc.Appliance\x1a\x16.google.protobuf.Empty\"\x00\x12R\n\x0fRemoveImageList\x12%.cloudkeeper_grpc.ImageListIdentifier\x1a\x16.google.protobuf.Empty\"\x00\x12O\n\nImageLists\x12\x16.google.protobuf.Empty\x1a%.cloudkeeper_grpc.ImageListIdentifier\"\x00\x30\x01\x12T\n\nAppliances\x12%.cloudkeeper_grpc.ImageListIdentifier\x1a\x1b.cloudkeeper_grpc.Appliance\"\x00\x30\x01\x12K\n\x17RemoveExpiredAppliances\x12\x16.google.protobuf.Empty\x1a\x16.google.protobuf.Empty\"\x00P\x00\x62\x06proto3')
   ,
   dependencies=[google_dot_protobuf_dot_empty__pb2.DESCRIPTOR,],
   public_dependencies=[google_dot_protobuf_dot_empty__pb2.DESCRIPTOR,])
 
 
-
-_IMAGE_DISKFORMAT_FORMAT = _descriptor.EnumDescriptor(
-  name='Format',
-  full_name='cloudkeeper_grpc.Image.DiskFormat.Format',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='AKI', index=0, number=0,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='AMI', index=1, number=1,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='ARI', index=2, number=2,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='ISO', index=3, number=3,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='PLOOP', index=4, number=4,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='QCOW2', index=5, number=5,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='RAW', index=6, number=6,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='VDI', index=7, number=7,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='VHD', index=8, number=8,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='VHDX', index=9, number=9,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='VMDK', index=10, number=10,
-      serialized_options=None,
-      type=None),
-  ],
-  containing_type=None,
-  serialized_options=None,
-  serialized_start=740,
-  serialized_end=853,
-)
-_sym_db.RegisterEnumDescriptor(_IMAGE_DISKFORMAT_FORMAT)
-
-_IMAGE_CONTAINERFORMAT_FORMAT = _descriptor.EnumDescriptor(
-  name='Format',
-  full_name='cloudkeeper_grpc.Image.ContainerFormat.Format',
-  filename=None,
-  file=DESCRIPTOR,
-  values=[
-    _descriptor.EnumValueDescriptor(
-      name='AKI', index=0, number=0,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='AMI', index=1, number=1,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='ARI', index=2, number=2,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='BARE', index=3, number=3,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='DOCKE', index=4, number=4,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='OVA', index=5, number=5,
-      serialized_options=None,
-      type=None),
-    _descriptor.EnumValueDescriptor(
-      name='OVF', index=6, number=6,
-      serialized_options=None,
-      type=None),
-  ],
-  containing_type=None,
-  serialized_options=None,
-  serialized_start=874,
-  serialized_end=948,
-)
-_sym_db.RegisterEnumDescriptor(_IMAGE_CONTAINERFORMAT_FORMAT)
 
 _IMAGE_MODE = _descriptor.EnumDescriptor(
   name='Mode',
@@ -145,10 +45,40 @@ _IMAGE_MODE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=950,
-  serialized_end=979,
+  serialized_start=636,
+  serialized_end=665,
 )
 _sym_db.RegisterEnumDescriptor(_IMAGE_MODE)
+
+_IMAGE_FORMAT = _descriptor.EnumDescriptor(
+  name='Format',
+  full_name='cloudkeeper_grpc.Image.Format',
+  filename=None,
+  file=DESCRIPTOR,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='RAW', index=0, number=0,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='OVA', index=1, number=1,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='QCOW2', index=2, number=2,
+      serialized_options=None,
+      type=None),
+    _descriptor.EnumValueDescriptor(
+      name='VMDK', index=3, number=3,
+      serialized_options=None,
+      type=None),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=667,
+  serialized_end=714,
+)
+_sym_db.RegisterEnumDescriptor(_IMAGE_FORMAT)
 
 
 _APPLIANCE = _descriptor.Descriptor(
@@ -294,54 +224,6 @@ _APPLIANCE = _descriptor.Descriptor(
 )
 
 
-_IMAGE_DISKFORMAT = _descriptor.Descriptor(
-  name='DiskFormat',
-  full_name='cloudkeeper_grpc.Image.DiskFormat',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-    _IMAGE_DISKFORMAT_FORMAT,
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=726,
-  serialized_end=853,
-)
-
-_IMAGE_CONTAINERFORMAT = _descriptor.Descriptor(
-  name='ContainerFormat',
-  full_name='cloudkeeper_grpc.Image.ContainerFormat',
-  filename=None,
-  file=DESCRIPTOR,
-  containing_type=None,
-  fields=[
-  ],
-  extensions=[
-  ],
-  nested_types=[],
-  enum_types=[
-    _IMAGE_CONTAINERFORMAT_FORMAT,
-  ],
-  serialized_options=None,
-  is_extendable=False,
-  syntax='proto3',
-  extension_ranges=[],
-  oneofs=[
-  ],
-  serialized_start=855,
-  serialized_end=948,
-)
-
 _IMAGE = _descriptor.Descriptor(
   name='Image',
   full_name='cloudkeeper_grpc.Image',
@@ -364,7 +246,7 @@ _IMAGE = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='container_format', full_name='cloudkeeper_grpc.Image.container_format', index=2,
+      name='format', full_name='cloudkeeper_grpc.Image.format', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -412,19 +294,13 @@ _IMAGE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
-    _descriptor.FieldDescriptor(
-      name='disk_format', full_name='cloudkeeper_grpc.Image.disk_format', index=9,
-      number=10, type=14, cpp_type=8, label=1,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
-  nested_types=[_IMAGE_DISKFORMAT, _IMAGE_CONTAINERFORMAT, ],
+  nested_types=[],
   enum_types=[
     _IMAGE_MODE,
+    _IMAGE_FORMAT,
   ],
   serialized_options=None,
   is_extendable=False,
@@ -433,7 +309,7 @@ _IMAGE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=420,
-  serialized_end=979,
+  serialized_end=714,
 )
 
 
@@ -463,19 +339,15 @@ _IMAGELISTIDENTIFIER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=981,
-  serialized_end=1033,
+  serialized_start=716,
+  serialized_end=768,
 )
 
 _APPLIANCE.fields_by_name['image'].message_type = _IMAGE
-_IMAGE_DISKFORMAT.containing_type = _IMAGE
-_IMAGE_DISKFORMAT_FORMAT.containing_type = _IMAGE_DISKFORMAT
-_IMAGE_CONTAINERFORMAT.containing_type = _IMAGE
-_IMAGE_CONTAINERFORMAT_FORMAT.containing_type = _IMAGE_CONTAINERFORMAT
 _IMAGE.fields_by_name['mode'].enum_type = _IMAGE_MODE
-_IMAGE.fields_by_name['container_format'].enum_type = _IMAGE_CONTAINERFORMAT_FORMAT
-_IMAGE.fields_by_name['disk_format'].enum_type = _IMAGE_DISKFORMAT_FORMAT
+_IMAGE.fields_by_name['format'].enum_type = _IMAGE_FORMAT
 _IMAGE_MODE.containing_type = _IMAGE
+_IMAGE_FORMAT.containing_type = _IMAGE
 DESCRIPTOR.message_types_by_name['Appliance'] = _APPLIANCE
 DESCRIPTOR.message_types_by_name['Image'] = _IMAGE
 DESCRIPTOR.message_types_by_name['ImageListIdentifier'] = _IMAGELISTIDENTIFIER
@@ -489,27 +361,11 @@ Appliance = _reflection.GeneratedProtocolMessageType('Appliance', (_message.Mess
 _sym_db.RegisterMessage(Appliance)
 
 Image = _reflection.GeneratedProtocolMessageType('Image', (_message.Message,), dict(
-
-  DiskFormat = _reflection.GeneratedProtocolMessageType('DiskFormat', (_message.Message,), dict(
-    DESCRIPTOR = _IMAGE_DISKFORMAT,
-    __module__ = 'cloudkeeper_pb2'
-    # @@protoc_insertion_point(class_scope:cloudkeeper_grpc.Image.DiskFormat)
-    ))
-  ,
-
-  ContainerFormat = _reflection.GeneratedProtocolMessageType('ContainerFormat', (_message.Message,), dict(
-    DESCRIPTOR = _IMAGE_CONTAINERFORMAT,
-    __module__ = 'cloudkeeper_pb2'
-    # @@protoc_insertion_point(class_scope:cloudkeeper_grpc.Image.ContainerFormat)
-    ))
-  ,
   DESCRIPTOR = _IMAGE,
   __module__ = 'cloudkeeper_pb2'
   # @@protoc_insertion_point(class_scope:cloudkeeper_grpc.Image)
   ))
 _sym_db.RegisterMessage(Image)
-_sym_db.RegisterMessage(Image.DiskFormat)
-_sym_db.RegisterMessage(Image.ContainerFormat)
 
 ImageListIdentifier = _reflection.GeneratedProtocolMessageType('ImageListIdentifier', (_message.Message,), dict(
   DESCRIPTOR = _IMAGELISTIDENTIFIER,
@@ -526,8 +382,8 @@ _COMMUNICATOR = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   serialized_options=None,
-  serialized_start=1036,
-  serialized_end=1806,
+  serialized_start=771,
+  serialized_end=1541,
   methods=[
   _descriptor.MethodDescriptor(
     name='PreAction',
